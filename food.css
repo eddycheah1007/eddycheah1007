@@ -1,0 +1,170 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 30, 2024, 4:17:41 PM
+    Author     : Dell
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background: #fff;
+}
+
+header{
+    background: #6b1111;
+}
+
+
+.container{
+    width:70%;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#root{
+    margin-top: 150px;
+    width:80%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px;       
+}
+
+.box{
+    background: bisque;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #6b1111;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center; 
+    border-radius: 5px;
+}
+
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:110px;
+}
+h2{
+    font-size: 20px;
+    color:red;    
+}
+
+button{
+    width: 100%;
+    position:relative;
+    border:none;
+    border-radius: 5px;
+    background-color: #6b1111;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #6b1111;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    * {
+    padding: 0;
+    font-size: xx-small;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+
+    .container {
+    width: 70%;
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+    align-content: center;
+    }
+    
+    .box {
+    max-height: 220px;
+    background: bisque;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #6b1111;
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    #root {
+    margin-top: 150px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    }
+    
+    h2 {
+    font-size: xx-small;
+    color: red;
+    }
+    
+    button {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #6b1111;
+    padding: 7px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: xx-small;
+    }
+    
+    .bottom{
+        margin-top: 0;
+    }
+}

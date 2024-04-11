@@ -1,0 +1,196 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 7, 2024, 7:12:10 PM
+    Author     : leewh
+*/
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 10vw; 
+    transition: 0.4s;
+}
+
+header #circusText {
+    display: none;
+}
+
+header.sticky{
+    background: #6b1111;
+    padding: 1vh 7vw; 
+    height: 100px;
+}
+
+header.sticky .circus img {
+    display: none;
+}
+
+header.sticky #circusText {
+    display: inline-block;
+    color: bisque;
+    font-size: 2.5vh;
+}
+
+header.sticky .menu a {
+    font-size: 1vw; 
+}
+
+header .circus{
+    width: 15vw; 
+    max-width: 200px; 
+    height: auto; 
+    display: inline-block;
+    vertical-align: top;
+}
+
+header .circus img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a{
+    color: #fff;
+    font-size: 1.5vw; 
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 2vw; 
+    padding: 0.5vh 1.5vw; 
+    border-radius: 1vw; 
+    transition: 0.3s;
+    transition-property: color, background;
+}
+
+header .menu a:hover{
+    color: #000;
+    background: bisque;
+}
+
+header .btn{
+    color: #fff;
+    font-size: 3vw; 
+    cursor: pointer;
+    display: none;
+}
+
+.cart{
+    display: flex;
+    background-color:transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 1vw;
+    width: auto;
+    font-size:24px;
+}
+
+.cart p {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 1080px){
+    header .btn{
+        display: block;
+    }
+
+    header .menu{
+        position: fixed;
+        background: #6b1111;
+        flex-direction: column;
+        min-width: 60%; 
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 10vh 15vw; 
+        transition: 0.5s;
+        transition-property: right;
+    }
+
+    header .menu.active{
+        right: 0;
+    }
+
+    header .menu .close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 2vh; 
+    }
+
+    header .menu a{
+        display: block;
+        font-size: 1.5vw; 
+        margin: 2vw; 
+        padding: 0.5vh 1.5vw; 
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    header{
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vh 10vw; 
+        transition: 0.4s;
+    }
+    
+    header.sticky{
+        background: #6b1111;
+        padding: 1vh 7vw; 
+    }
+
+    header .menu a{
+        font-size: 5vw; 
+        margin: 0 1vw; 
+        padding: 1vh 2vw; 
+        border-radius: 1vw; 
+    }
+
+    header .btn{
+        font-size: 5vw; 
+    }
+    
+    header.sticky .menu a {
+    font-size: 5vw; 
+    }
+    
+    .cart{
+    font-size:5vw;
+    }
+
+    .cart p {
+        height: 5vw;
+        width: 5vw;
+    }
+}

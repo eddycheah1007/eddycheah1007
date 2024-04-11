@@ -1,0 +1,133 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/023/712/526/non_2x/circus-background-illustration-ai-generative-free-photo.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+  
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    min-height: 100vh;
+    background-color: #6b1111;
+}
+  
+.container form{
+    padding:20px;
+    width:700px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+  
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+  
+.container form .row .col{
+    flex:1 1 250px;
+}
+  
+.container form .row .col .title{
+    font-size: 20px;
+    color:#6b1111;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+  
+.container form .row .col .inputBox{
+    margin:15px 0;
+    padding-left: 10px;
+}
+  
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+  
+.container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+  
+.container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+}
+  
+.container form .row .col .flex{
+    display: flex;
+    gap:15px;
+}
+  
+.container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+  
+.container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container .flex {
+    justify-content: center;
+}
+
+.container form .row .col .inputBox select{
+    width: 100%;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox2 select{
+    width: 100%;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .submit-btn{
+    width: 100%;
+    padding:10px;
+    font-size: 17px;
+    border-radius: 10px;
+    background: #6b1111;
+    color: bisque;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .submit-btn:hover{
+    background: bisque;
+    color: #6b1111;
+  }
+
